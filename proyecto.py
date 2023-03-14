@@ -10,7 +10,6 @@ st.set_page_config(page_title="videjuegos",
 st.title('Videojuegos app')
 st.title('Nombre: Aarron Emiliano Torres')
 st.title('Matricula: zS20006726')
-#--- LOGO ---#
 st.sidebar.image("logo.png")
 st.sidebar.markdown("##")
 
@@ -129,18 +128,6 @@ if st.sidebar.checkbox('scatter de las ventas'):
     st.pyplot(fig)
 
     st.markdown("___")
-
-
-
-
-
-
-#Multiselect
-#Genre = st.sidebar.multiselect("Selecciona origen",
-#                                options=data['Genre'].unique())
-
-#df_selection=data.query("Genre == @Genre")
-#st.write("Origen seleccionado",df_selection)
 
 
 
