@@ -78,15 +78,18 @@ if agree:
                     x=data['Genre'],
                     y=data.index, #index es para que cuente la cantidad total
                     orientation="v",
-                    title="Cantidad de generos que hay por videojuegos",
+                    title="En histograma representa la cantidad que por genero que se encuentra en los videojuegos osea muestra el numero de total de generos que hay por juegos",
                     labels=dict(y="cantidad", x="genre"),
                     color_discrete_sequence=["#7ECBB4"],
                     template="plotly_white")
   st.plotly_chart(fig_genre)
 
+
 #diagrama de barras
 if st.sidebar.checkbox('Grafica de barras ventas'):
     st.subheader('grafica de barras ventas')
+
+    st.title("Lo que representa esta grafica de barra es la comparacion de las ventas que se ecuentran entre las ventas de norteamerica con las de ventas de europa de los videjuegos que se encuentras en el dateset")
 
     fig, ax = plt.subplots()
 
@@ -104,9 +107,12 @@ if st.sidebar.checkbox('Grafica de barras ventas'):
 
     st.markdown("___")
 
+
 #diagrama de scatter
 if st.sidebar.checkbox('scatter de las ventas'):
     st.subheader('scatter de ventas')
+
+    st.title("Lo que respresenta esta grafica de scatter es la comparacion de las ventas que se cnuentran en las ventas de europa con las ventas de japon y muestra con los puntos quien gano en ventas de los videojuegos que respresenta el dataset")
 
     fig, ax = plt.subplots()
 
@@ -124,6 +130,9 @@ if st.sidebar.checkbox('scatter de las ventas'):
     st.pyplot(fig)
 
     st.markdown("___")
+
+
+
 
 
 
